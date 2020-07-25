@@ -1,11 +1,6 @@
-require('./style.css');
+import structure from './structure';
+import themeHandler from './themeHandler';
+import './style.css';
 
-let element = document.createElement('div');
-element.innerText = 'Webpack HMR';
-
-let input = document.createElement('input');
-input.placeholder = 'Type here';
-
-element.appendChild(input);
-
-document.body.appendChild(element);
+structure.forEach(element => document.body.appendChild(element));
+themeHandler();
