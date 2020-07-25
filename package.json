@@ -1,0 +1,21 @@
+{
+  "name": "webpack-hmr",
+  "version": "1.0.0",
+  "description": "Understand webpack hot module replacement",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack && open dist/index.html"
+  },
+  "keywords": [
+    "webpack",
+    "HMR"
+  ],
+  "author": "rajat sharma",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
