@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "start": "webpack && open dist/index.html"
+    "start": "webpack && open dist/index.html",
+    "serve:no-lr": "webpack-dev-server --port 9000 --open --live-reload=false",
+    "serve:no-hot": "webpack-dev-server --port 9000 --open",
+    "serve": "webpack-dev-server --port 9000 --open --hot"
   },
   "keywords": [
     "webpack",
@@ -14,8 +17,11 @@
   "author": "rajat sharma",
   "license": "UNLICENSED",
   "devDependencies": {
+    "css-loader": "^3.6.0",
     "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
